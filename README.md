@@ -1,4 +1,4 @@
-# Luminaire Team Collaboration Practice – Movie Streaming Site
+# Lumnaire Team Collaboration Practice – Movie Streaming Site
 
 > **A hands-on frontend project** by the **Luminaire Team** to practice **collaboration, version control, Jira workflows, and clean code** using **HTML, CSS, JavaScript**, and a **movie API**.
 
