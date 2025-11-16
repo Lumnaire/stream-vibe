@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stream Vibe</title>
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <main>
+        <!-- Carousel Section -->
+        <section class="section_carousel">
+            <div class="carousel_header">
+                <div class="carousel_header_text">
+                    <h2 class="carousel_title">Explore our wide variety of categories</h2>
+                    <p class="carousel_subtitle">
+                        Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new
+                    </p>
+                </div>
+                <div class="carousel_header_buttons">
+                    <button class="carousel_button left" aria-label="Previous">
+                        <img class="carousel_button_icon" src="./assets/icons/arrow-left.svg" alt="Left Arrow" />
+                    </button>
+                    <div class="carousel_indicators" aria-label="Carousel pages">
+                        <!-- 5 indicators for 5 pages (with 21 cards @ 5 per page, last page shows remaining) -->
+                        <span class="indicator active" aria-label="Page 1" role="button"></span>
+                        <span class="indicator" aria-label="Page 2" role="button"></span>
+                        <span class="indicator" aria-label="Page 3" role="button"></span>
+                        <span class="indicator" aria-label="Page 4" role="button"></span>
+                    </div>
+                    <button class="carousel_button right" aria-label="Next">
+                        <img class="carousel_button_icon" src="./assets/icons/arrow-right.svg" alt="Right Arrow" />
+                    </button>
+                </div>
+            </div>
+            <!-- Splide root -->
+            <div id="genre-carousel" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                <!-- Original cards now slides -->
+                <li class="splide__slide carousel_card">
+                    <div class="carousel_thumbnails">
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Action" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Action" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Action" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Action" />
+                    </div>
+                    <div class="carousel_actions">
+                        <h3 class="carousel_card_title">Action</h3>
+                        <button class="carousel_card_button" aria-label="Go to Action">
+                            <img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" />
+                        </button>
+                    </div>
+                </li>
+                <li class="splide__slide carousel_card">
+                    <div class="carousel_thumbnails">
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Adventure" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Adventure" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Adventure" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Adventure" />
+                    </div>
+                    <div class="carousel_actions">
+                        <h3 class="carousel_card_title">Adventure</h3>
+                        <button class="carousel_card_button" aria-label="Go to Adventure">
+                            <img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" />
+                        </button>
+                    </div>
+                </li>
+                <li class="splide__slide carousel_card">
+                    <div class="carousel_thumbnails">
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Comedy" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Comedy" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Comedy" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Comedy" />
+                    </div>
+                    <div class="carousel_actions">
+                        <h3 class="carousel_card_title">Comedy</h3>
+                        <button class="carousel_card_button" aria-label="Go to Comedy">
+                            <img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" />
+                        </button>
+                    </div>
+                </li>
+                <li class="splide__slide carousel_card">
+                    <div class="carousel_thumbnails">
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Drama" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Drama" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Drama" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Drama" />
+                    </div>
+                    <div class="carousel_actions">
+                        <h3 class="carousel_card_title">Drama</h3>
+                        <button class="carousel_card_button" aria-label="Go to Drama">
+                            <img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" />
+                        </button>
+                    </div>
+                </li>
+                <li class="splide__slide carousel_card">
+                    <div class="carousel_thumbnails">
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Horror" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Horror" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Horror" />
+                        <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Horror" />
+                    </div>
+                    <div class="carousel_actions">
+                        <h3 class="carousel_card_title">Horror</h3>
+                        <button class="carousel_card_button" aria-label="Go to Horror">
+                            <img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" />
+                        </button>
+                    </div>
+                </li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sci-Fi" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sci-Fi" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sci-Fi" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sci-Fi" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Sci-Fi</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Fantasy" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Fantasy" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Fantasy" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Fantasy" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Fantasy</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Thriller" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Thriller" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Thriller" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Thriller" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Thriller</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Mystery" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Mystery" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Mystery" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Mystery" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Mystery</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Romance" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Romance" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Romance" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Romance" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Romance</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Documentary" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Documentary" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Documentary" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Documentary" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Documentary</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Animation" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Animation" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Animation" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Animation" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Animation</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Family" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Family" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Family" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Family" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Family</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Crime" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Crime" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Crime" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Crime" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Crime</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Western" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Western" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Western" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Western" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Western</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Musical" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Musical" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Musical" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Musical" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Musical</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Biography" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Biography" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Biography" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Biography" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Biography</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="War" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="War" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="War" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="War" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">War</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="History" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="History" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="History" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="History" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">History</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                <li class="splide__slide carousel_card"><div class="carousel_thumbnails">
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sports" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sports" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sports" />
+                    <img class="carousel_movies_thumbnail" src="./assets/movies/kingsmen.jfif" alt="Sports" />
+                </div><div class="carousel_actions"><h3 class="carousel_card_title">Sports</h3><button class="carousel_card_button"><img class="carousel_card_button_icon" src="./assets/icons/arrow-right.svg" alt="Go" /></button></div></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+    </main>
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <script src="./js/components/section-carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import url('./components/section-carousel.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --accent-color: #E50000;
+    --background-color: #141414;
+    --primary-dark-color: #0F0F0F;
+    --secondary-dark-color: #1A1A1A;
+    --tertiary-dark-color: #333333;
+    --text-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+main{
+    background: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
